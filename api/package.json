@@ -9,6 +9,8 @@
   "author": "Gabriel Schenker",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "pg": "^4.5.3",
+    "request": "^2.71.0"
   }
 }

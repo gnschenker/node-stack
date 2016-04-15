@@ -1,8 +1,8 @@
 FROM node
-RUN mkdir -p /app
+RUN mkdir /app
 WORKDIR /app
 COPY package.json /app/
 RUN ["npm","install"]
 COPY . /app
-EXPOSE 3000
+EXPOSE 3001
 ENTRYPOINT ["npm","start"]

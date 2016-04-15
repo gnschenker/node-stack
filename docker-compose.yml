@@ -1,0 +1,23 @@
+version: '2'
+services:
+  api:
+    build: ./api
+    ports:
+      - "3000:3000"
+    networks:
+      - front-tier
+  domain:
+    build: ./domain
+    networks:
+      - front-tier
+  postgres:
+    image: postgres:latest
+    environment: 
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=test
+    networks:
+      - front-tier
+networks:
+  front-tier:
+    driver: bridge 

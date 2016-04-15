@@ -1,0 +1,16 @@
+{
+  "name": "domain-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine-node spec",
+    "start": "node server.js"
+  },
+  "author": "Gabriel Schenker",
+  "license": "ISC"
+}
