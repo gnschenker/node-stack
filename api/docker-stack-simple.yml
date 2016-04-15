@@ -1,0 +1,3 @@
+FROM: gnschenker/api
+PORTS:
+  - 80:3000
