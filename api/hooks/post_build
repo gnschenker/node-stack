@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "================"
+echo "Post build tests"
+echo "================"
